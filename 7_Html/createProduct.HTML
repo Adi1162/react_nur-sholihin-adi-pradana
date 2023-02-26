@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Create Product</h1>
+    <h2>Details Product</h2>
+    <style>
+        /* Styling for the form */
+  
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      input[type="text1"] {
+        width: 70%;
+        height: 100px;
+        border: 0.5px solid #000000;
+      }
+       input[type="text2"] {
+        width: 30px;
+        height: 10%;
+        border: 0.5px solid #000000;
+       }
+    </style>
+  </head>
+  <body>
+    
+    <form>
+      <h4>Product Name :</h4>
+      <input type="text" id="name" name="name" placeholder="Enter product name">
+      
+      <h4>Product Category :</h4>
+      <select name="Product Category" >
+        <option value="Brand New"> Brand New</option>
+        <option value="Second Hank">Second Hank</option>
+        <option value="Refurbished" selected>Refurbished</option>
+    </select>
+   <br/>
+      
+    </form>
+      <h4>Product Freshness :</h4>
+      <form action="/action_page.php">
+        <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Brand New</label><br>
+        <input type="radio" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Second Hank</label><br>
+        <input type="radio" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Refurbished</label><br><br>
+      </form>
+      <form action="/action_page.php">
+        <label for="myfile">Image of product:</label>
+        <input type="file" id="myfile" name="myfile" multiple><br><br>
+      </form>
+      <h4>Additional Description :</h4>
+      <input type="text1" id="deskripsi" name="deskripsi">
+      <form>
+      <h4>Product Price :</h4>
+      <input type="text2" id="name" name="name" placeholder="$100">
+  </form>
+  
+  <form action="/submit-form" method="post">
+    <!-- Isi formulir di sini -->
+    <button type="submit">Submit</button>
+  </form>
+</head>
+<body>
+    
+</body>
+</html>
