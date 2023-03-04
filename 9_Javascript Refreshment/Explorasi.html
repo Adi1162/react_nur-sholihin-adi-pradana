@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Product</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<!-- HTML -->
+<form id="createProductForm">
+    <label for="productName">Product Name:</label>
+    <input type="text" id="productName" name="productName" required>
+    <br>
+    <label for="productPrice">Product Price:</label>
+    <input type="number" id="productPrice" name="productPrice" required>
+    <br>
+    <button type="submit" id="submitBtn">Create Product</button>
+  </form>
+  
+  <!-- JavaScript -->
+  <script>
+    const form = document.querySelector('#createProductForm');
+    const productName = document.querySelector('#productName');
+    const productPrice = document.querySelector('#productPrice');
+    const submitBtn = document.querySelector('#submitBtn');
+  
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (productName.value === '') {
+        productName.classList.add('error');
+        productName.setAttribute('placeholder', 'Product Name must be filled in');
+        submitBtn.disabled = true;
+      } else if (productName.value.match(/[**@/#{}**]/)) {
+        productName.classList.add('error');
+        productName.setAttribute('placeholder', 'Name must not contain symbols.');
+        submitBtn.disabled = true;
+      } else {
+        productName.classList.remove('error');
+        productName.removeAttribute('placeholder');
+      }
+  
+      if (productPrice.value === '') {
+        productPrice.classList.add('error');
+        productPrice.setAttribute('placeholder', 'Product Price must be filled in');
+        submitBtn.disabled = true;
+      } else {
+        productPrice.classList.remove('error');
+        productPrice.removeAttribute('placeholder');
+      }
+  
+      if (!productName.classList.contains('error') && !productPrice.classList.contains('error')) {
+        submitBtn.disabled = false;
+        alert(`Product Name: ${productName.value}\nProduct Price: ${productPrice.value}`);
+      }
+    });
+  
+    productName.addEventListener('input', () => {
+      if (productName.classList.contains('error')) {
+        productName.classList.remove('error');
+        productName.removeAttribute('placeholder');
+        submitBtn.disabled = false;
+      }
+    });
+  
+    productPrice.addEventListener('input', () => {
+      if (productPrice.classList.contains('error')) {
+        productPrice.classList.remove('error');
+        productPrice.removeAttribute('placeholder');
+        submitBtn.disabled = false;
+      }
+    });
+  </script>
+  
+ 
+  </body>
+</html>
