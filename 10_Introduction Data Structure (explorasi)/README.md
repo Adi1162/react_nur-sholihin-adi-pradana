@@ -1,10 +1,47 @@
-Frontend adalah sebuat sebagian dari website yang membuat tampilan yang menarik kepada user.
-Html(Hypertext Markup Language)adalah sebuah standar yang digunakan secara luas untuk menampilkan halaman web.
-kegunaan HTML membuat struktur dari halaman website, mengatur tampilan dan isi dari halaman web, membuat tabel dengan tag HTML table, membuat form HTML, membuat gambar dengan canvas, mempublikasikan halaman website secara online,
-Script untuk dokumentasi ada 5 yaitu doctype, tag html, tg head, tag title, dan tag body.
-Doctype akan mendefinisikan file tempat kalian menulis sebagai HTML 5, tag html merukan roor dari halaman, jadi tag2 lain seperti head title body itu semua berada ditag HTML. tag head berisikan informasi meta tentang dokumen, kalau nanti belajar SEO atau serach enggine optimize tag meta
-Sryling pada paragraph HTML
-<strong> mebuat text lebih tebal
-<em>penekanan pada text menjadi italic
-<s>membuat text dengan garis tercoret
-<br>(line break, untuk membuat garis baru)
+(11) Introduction Data Structures (javascript)
+
+1. Mengapa Belajar Data Structures?
+•	Mengerti kualitas kode yang dibuat.
+•	Efisiensi kode.
+
+2. Data Structures
+•	Data adalah cakupan luas merujuk semua tipe informasi yang tersimpan dalam memori komputer (string, number, Boolean, dll).
+•	Data Structure adalah bagaimana menyimpan dan mengorganisir data/value/elemen di dalam memori komputer.
+•	Data dapat dikelola dengan berbagai cara.
+
+3. Basic Data Structures
+1.	Array
+•	Data structure paling dasar.
+•	Serbaguna
+
+a.	Reading
+-	Melihat nilai apa yang terkandung pada indeks tertentu di dalam array.
+- Operasi yang efisien.
+- Jenis operasi tercepat karena hanya membutuhkan 1 steps.
+- Setiap cell pada memori memiliki alamat spesifik yang diwakili dengan angka
+- Angka yang dimiliki lebih besar dari cell sebelumnya
+- Ketika membaca sebuah value pada indeks tertentu memori komputer dapat langsung melompat ke indeks tersebut, 
+
+b.	Searching
+-  Mencari apakah nilai tertentu ada didalam array atau tidak.
+- Kebalikan dari Reading.
+- Ketika melakukan operasi searching pada array komputer tidak memiliki cara untuk melompat langsung ke nilai tertentu.
+- Komputer tidak bisa tahu begitu saja nilai apa yang terkandung pada setiap memori.
+- Perlu memeriksa setiap cell satu per satu.
+- Kurang efisien disbanding dengan Reading.
+- Memeriksa satu per satu cell.
+- Membutuhkan banyak steps sesuai dengan ukuran array atau disebut juga linear search.
+
+c.	Insertion
+- Efisiensi tergantung dimana kita memasukan value nya.
+- 	Memasukan value pada akhir dari array hanya membutuhkan 1 steps.
+- Memasukan value baru di awal atau tengah array perlu menggeser data yang sudah ada pada array.
+- Sehingga akan membutuhkan steps tambahan.
+
+d.	Deletion
+- Operasi menghilangkan value pada indeks tertentu.
+- Membutuhkan jumlah N steps untuk array yang mengandung N data.
+
+2.	Set
+•	Data structure sama seperti array, tetapi perbedaan nya hanya pada set yang tidak mengizinkan duplikat value dimasukan kedalam nya.
+•	Dari keempat operasi reading, searching, insertion, dan deletion terdapat perbedaan efisiensi pada operasi. Sedangkan untuk operasi lainnya sama seperti array.
