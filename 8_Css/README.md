@@ -1,0 +1,11 @@
+Apa itu Css ?
+CSS (Cascading Style Sheets) adalah sebuah bahasa pemrograman yang digunakan untuk mengatur tampilan (styling) dari elemen-elemen yang ada pada halaman web. Dengan CSS, Anda dapat mengontrol font, warna, tata letak, ukuran, dan banyak lagi dari elemen HTML pada halaman web.
+CSS dapat digunakan untuk mengatur tampilan dari seluruh halaman web, atau hanya bagian-bagian tertentu. CSS juga memungkinkan untuk menentukan gaya untuk berbagai media, seperti layar, cetakan, atau perangkat mobile, sehingga konten dapat disesuaikan dengan media yang digunakan oleh pengguna.
+CSS digunakan secara bersamaan dengan HTML dan JavaScript untuk membangun aplikasi web yang dinamis dan menarik. Dalam sebuah proyek web, CSS biasanya disimpan dalam file terpisah dengan ekstensi .css, dan dihubungkan dengan file HTML melalui tag <link>.
+Analogi css ?
+Salah satu analogi untuk CSS adalah seperti pakaian untuk sebuah halaman web. Seperti halnya pakaian yang dapat membuat seseorang terlihat lebih menarik atau profesional, CSS dapat membuat tampilan sebuah halaman web menjadi lebih menarik dan profesional.
+Sama seperti dalam pakaian, dengan menggunakan CSS, kita dapat memilih warna, jenis font, ukuran, dan tata letak yang tepat untuk membuat tampilan yang diinginkan. Dengan demikian, CSS memungkinkan pengembang web untuk memberikan pengalaman visual yang lebih menarik dan konsisten bagi pengguna.
+Selain itu, CSS juga memungkinkan pengembang web untuk memisahkan konten dari tampilan. Analogi ini dapat dikaitkan dengan cara seseorang memilih pakaian untuk situasi tertentu, seperti memilih pakaian yang sesuai untuk acara formal atau santai. Dengan memisahkan konten dari tampilan, kita dapat dengan mudah memodifikasi tampilan tanpa harus mengubah konten yang ada di dalamnya.
+Dalam analogi ini, HTML dapat dianggap sebagai kerangka tubuh, yang menyediakan struktur dan konten dari halaman web, sedangkan CSS dapat dianggap sebagai pakaian yang digunakan untuk memperindah atau memperbaiki tampilan kerangka tubuh tersebut.
+Css selector 
+CSS selector (selektor CSS) adalah suatu cara untuk menentukan elemen HTML mana yang akan diberikan styling oleh CSS. Sebuah selector CSS dapat digunakan untuk memilih satu atau lebih elemen HTML pada sebuah halaman web.
